@@ -1,0 +1,376 @@
+
+h2{
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+        /*var(--padding-container);*/
+
+}
+
+/* Nav ----------------------*/
+.nav {
+    --padding-container: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    top: 0;
+    
+    
+
+}
+
+.nav__title {
+    font-weight: 300;
+}
+
+.nav__link {
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+}
+
+.nav__items {
+    list-style: none;
+}
+
+.nav__links {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav__menu {
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+
+.nav__img {
+    display: block;
+    width: 30px;
+}
+
+.nav__close {
+    display: var(--show, none);
+}
+
+
+/*Footer------------*/
+.footer {
+    background-color: #153662;
+    bottom: 0;
+}
+
+.footer__title {
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.footer__title,
+.footer__newsletter {
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+
+}
+
+.nav--footer {
+    /*padding-bottom: 20px;*/
+    display: grid;
+    gap: 1em;
+    grid-auto-flow: row;
+    height: 100%;
+    padding: 2vh;
+    
+
+}
+
+.nav__link--footer {
+    display: flex;
+    margin: 0;
+    margin-right: 20px;
+    flex-wrap: wrap;
+}
+
+.footer__inputs {
+    margin-top: 10px;
+    display: flex;
+    overflow: hidden;
+}
+
+.footer__input {
+    background-color: #fff;
+    height: 50px;
+    display: block;
+    padding-left: 10px;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    margin-right: 16px;
+}
+
+.footer__submit {
+    margin-left: auto;
+    display: inline-block;
+    height: 50px;
+    padding: 0 20px;
+    background-color: #546791;
+    border: none;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.footer__copy {
+    --padding-container: 30px 0;
+    text-align: center;
+    color: #fff;
+    padding: 2vh;
+}
+
+.footer__copyright {
+    font-weight: 300;
+}
+
+.footer__icons {
+    margin-bottom: 10px;
+    color: #f3f3f3;
+    width: 50px;
+}
+
+
+/* SOBRE NOSOTROS - EL EQUIPO */
+
+body {
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('comprar-casa.jpg');
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+}
+
+
+section.nosotros {
+    text-align: center;
+    padding: 5vh;
+    background-color: rgba(247, 246, 246, 0.788);
+    border: 10px;
+}
+
+.presentacion {
+    color: #153662;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-style: italic;
+    /* Estilo de fuente en cursiva */
+    font-weight: bold;
+    /* Peso de la fuente en negrita */
+}
+
+div.nosotros {
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    /* Esto distribuirá el espacio disponible entre las cartas */
+
+}
+
+.card {
+    position: relative;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+    margin: 40px;
+    background-color: #f4f4f5;
+}
+
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.card .cont {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    z-index: 20;
+}
+
+.card .cont .img {
+    height: 50%;
+    margin-bottom: 20px;
+}
+
+.card .cont .img img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(73, 69, 52, 0.4);
+}
+
+.card .cont span {
+    position: absolute;
+    background: linear-gradient(to right, #153662, royalblue);
+    transform: rotate(-35deg);
+    width: 350px;
+    height: 200px;
+    top: -50px;
+    left: -100px;
+}
+
+.card .cont h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.card .cont h6 {
+    color: #153662;
+}
+
+.card .cont p {
+    margin-top: 8px;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.card .links {
+    position: absolute;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+    padding: 20px;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    top: 15px;
+    transition: 1s;
+}
+
+.card .links a {
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(71, 70, 70);
+}
+
+.footer__icons .fa-brands {
+    font-size: 20px;
+
+}
+
+.card:hover .links {
+    right: -50px;
+    border-radius: 0 10px 10px 0;
+}
+
+.card .links a:nth-child(1):hover {
+    color: blue;
+}
+
+
+/* Pantallas menores a 1000px de ancho */
+@media screen and (max-width: 1000px) {
+    .nosotros {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 30%;
+        /* Reducir el ancho de las tarjetas para que quepan en pantalla */
+        margin: 20px;
+    }
+}
+
+/* Pantallas menores a 800px de ancho */
+@media screen and (max-width: 800px) {
+    .nosotros {
+        flex-direction: column;
+        /* Cambiar a dirección de columna */
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        /* Mantener el tamaño de las tarjetas */
+    }
+}
+
+/* Pantallas menores a 600px de ancho */
+@media screen and (max-width: 600px) {
+    .card .cont {
+        display: grid;
+        /* Cambiar a grid layout */
+        grid-template-rows: auto auto;
+        /* Dos filas de altura automática */
+        grid-template-columns: 1fr 1fr;
+        /* Dos columnas con igual fracción de ancho */
+        gap: 10px;
+        /* Espacio entre las celdas */
+    }
+
+    .card .cont .img {
+        grid-row: 1;
+        /* La imagen en la primera fila */
+        grid-column: 1 / span 2;
+        /* Ocupa dos columnas */
+    }
+
+    .card .cont h4 {
+        grid-row: 2;
+        /* Título en la segunda fila */
+        grid-column: 1;
+        /* En la primera columna */
+    }
+
+    .card .cont h6 {
+        grid-row: 2;
+        /* Subtítulo en la segunda fila */
+        grid-column: 2;
+        /* En la segunda columna */
+    }
+
+    .card .cont p {
+        grid-row: 3;
+        /* Párrafo en la tercera fila */
+        grid-column: 1 / span 2;
+        /* Ocupa dos columnas */
+    }
+}

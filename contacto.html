@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24132 Servicios Inmobiliarios</title>
+
+
+    <!--BOOSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--CSS STYLE-->
+    <link rel="stylesheet" href="/css/styleform.css">
+
+    <link rel="Icon" href="./img/1.ico">
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+    <script src="https://kit.fontawesome.com/3d04d0da9c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+    <header class="Logo__sections">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <img src="./img/logo.png" class="nav__logo" width="30%">
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="index.html" class="nav__links">Volver a Inicio</a>
+                </li>
+                <!-- <li class="nav__items">
+                    <a href="/about.html" class="nav__links">Sobre Nosotros</a>
+                </li>
+                <li class="nav__items">
+                    <a href="/propiedades.html" class="nav__links">Propiedades</a>
+                </li>
+                <li class="nav__items">
+                    <a href="/contacto.html" class="nav__links">Contacto</a>
+                </li>
+                <li class="nav__items">
+                    <a href="/login.html" class="nav__links">Login</a>
+                </li> -->
+
+
+                <img src="./img/close.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="./img/menu.svg" class="nav__img">
+            </div>
+        </nav>
+
+    </header>
+
+
+    <main>
+        <!-- <h1 class="animate__animated animate__fadeInDown">Formulario de contacto.</h1> -->
+
+        <div class="contenido-wrapper">
+            <div class="contenido-formulario">
+
+                <h2 class="animate__animated animate__flipInX">Contactanos</h2>
+                <form action="" class="formulario" id="formulario">
+                    <div class="formulario-grupo" id="grupo-nombres">
+                        <p>
+                            <label class="formulario__label" for="nombres">Nombres:</label>
+                            <input class="formulario__input" type="text" name="nombres" id="nombres"
+                                placeholder="Pedro">
+                            <i class=" formulario__validacion-estado bi bi-circle-fill"></i>
+                        <p class="formulario__input-error">Nombres de la personas sin números.</p>
+                        </p>
+                    </div>
+                    <div class="formulario-grupo" id="grupo-apellidos">
+                        <p>
+                            <label class="formulario__label" for="apellidos">Apellidos:</label>
+                            <input class="formulario__input" type="text" name="apellidos" id="apellidos"
+                                placeholder="Gomez">
+                            <i class=" formulario__validacion-estado bi bi-circle-fill"></i>
+                        <p class="formulario__input-error">Apellidos de la personas sin números.</p>
+                        </p>
+                    </div>
+                    <div class="formulario-grupo" id="grupo-email">
+                        <p>
+                            <label class="formulario__label" for="email">Correo electrónico:</label>
+                            <input class="formulario__input" type="email" name="email" id="email"
+                                placeholder="correo@gmail.com">
+                            <i class=" formulario__validacion-estado bi bi-circle-fill"></i>
+                        <p class="formulario__input-error">El correo solo puede contener letras, números, puntos y guión
+                            o guión bajos.</p>
+                        </p>
+                    </div>
+                    <div class="formulario__grupo" id="grupo-celular">
+                        <p>
+                            <label class="formulario__label" for="celular">Celular:</label>
+                            <input class="formulario__input" type="text" name="celular" id="celular"
+                                placeholder="11 1111 1111">
+                            <i class="formulario__validacion-estado bi bi-circle-fill"></i>
+                        <p class="formulario__input-error">Solamente números.</p>
+                        </p>
+                    </div>
+                    <p class="bloque">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea name="mensaje" id="mensaje" rows="3" placeholder="Mensaje..."></textarea>
+                    </p>
+
+                    <div class="formulario__grupo" id="grupo-terminos">
+                        <label class="formulario__label">
+                            <input type="checkbox" id="terminos"> Acepto los términos y condiciones
+                        </label>
+                    </div>
+
+                    <!-- Mensaje de éxito -->
+                    <div class="formulario__mensaje-exito" id="formulario-mensaje-exito">Formulario enviado
+                        correctamente!</div>
+
+                    <!-- Mensaje de error general -->
+                    <div class="formulario__mensaje" id="formulario-mensaje">Por favor complete todos los campos
+                        correctamente.</div>
+
+                    <button type="submit">Enviar</button>
+                    <p class="formulario-enviar formulario-mensaje-exito" id="formulario-mensaje-exito"> Se envió el
+                        formulario con exito!</p>
+                </form>
+            </div>
+
+            <div class="contacto-info">
+                <h4 class="animate__animated animate__shakeX">Más información</h4>
+                <ul>
+                    <li><i class="bi bi-envelope-at-fill"></i> Correo@gmail.com</li>
+                    <li><i class="bi bi-whatsapp"></i> 11-1111-1111</li>
+                    <li><i class="bi bi-instagram"></i> Instagram</li>
+                    <li><i class="bi bi-facebook"></i> Facebook</li>
+                </ul>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque saepe quos assumenda debitis
+                    ratione tempora veniam. Necessitatibus, praesentium. Pariatur, magnam?
+                </p>
+                <p>Inmobiliaria</p>
+            </div>
+        </div>
+        </div>
+        </div>
+
+    </main>
+
+
+
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">24132 Servicios Inmobiliarios</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="/index.html" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="/about.html" class="nav__links">Sobre nosotros</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="/propiedades.html" class="nav__links">Propiedades</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="/contacto.html" class="nav__links">Contacto</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="/login.html" class="nav__links">Login</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
+                <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
+                <div class="footer__inputs">
+                    <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
+                    <input type="submit" value="Registrate" class="footer__submit">
+                </div>
+            </form>
+        </section>
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="#" class="footer__icons">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="#" class="footer__icons">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="footer__icons">
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                </a>
+            </div>
+            <h3 class="footer__copyright">Derechos reservados &copy; Codo a Codo 2024</h3>
+        </section>
+
+    </footer>
+    <script src="./js/menu.js"></script>
+    <script src="/js/contacto.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

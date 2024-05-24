@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body class="lg-body">
+    <header class="Logo__sections">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <!-- <img src="./img/logo.png" class="nav__logo" width="30%"> -->
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="index.html" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="/about.html" class="nav__links">Sobre Nosotros</a>
+                </li>
+                <li class="nav__items">
+                    <a href="/propiedades.html" class="nav__links">Propiedades</a>
+                </li>
+                <li class="nav__items">
+                    <a href="/contacto.html" class="nav__links">Contacto</a>
+                </li>
+                <li class="nav__items">
+                    <a href="/login.html" class="nav__links">Login</a>
+                </li>
+            </ul>
+            <img src="./img/close.svg" class="nav__close" alt="">
+
+            <div class="nav__menu">
+                <img src="./img/menu.svg" class="nav__img" alt="">
+            </div>
+                
+    </header>
+
+    <main class="main-content">
+        <div class="lg-form-container">
+            <img src="./img/Logo de Inicial Inmobiliaria Minimalista Elegante Dorado.png" alt="Logo"
+                class="lg-form-logo">
+            <h2 class="lg-title">Iniciar Sesión</h2>
+            <form action="#" class="lg-form_flotante">
+                <div class="lg-form_group">
+                    <input type="text" id="email" name="email" required placeholder=" ">
+                    <label for="mail">Correo Electronico</label>
+                </div>
+                <div class="lg-form_group">
+                    <input type="password" id="password" name="password" required placeholder=" ">
+                    <label for="password">Contraseña</label>
+                </div>
+                <input type="submit" value="Ingresar" class="lg-form_btn">
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">24132 Servicios Inmobiliarios</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="/index.html" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="/about.html" class="nav__links">Sobre nosotros</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="/propiedades.html" class="nav__links">Propiedades</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="/contacto.html" class="nav__links">Contacto</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="/login.html" class="nav__links">Login</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
+                <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
+                <div class="footer__inputs">
+                    <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
+                    <input type="submit" value="Registrate" class="footer__submit">
+                </div>
+            </form>
+        </section>
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="#" class="footer__icons">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="#" class="footer__icons">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="footer__icons">
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                </a>
+            </div>
+            <h3 class="footer__copyright">Derechos reservados &copy; Codo a Codo 2024</h3>
+        </section>
+    </footer>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>
